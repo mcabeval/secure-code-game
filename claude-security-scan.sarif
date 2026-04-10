@@ -104,101 +104,117 @@
               "fullDescription": { "text": "Sensitive data embedded in LLM system prompts can be extracted via prompt injection attacks. Secrets should never be placed in system prompts." },
               "helpUri": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
               "properties": { "tags": ["security", "ai"], "precision": "high", "problem.severity": "error" }
+            },
+            {
+              "id": "CWE-787",
+              "name": "OutOfBoundsWrite",
+              "shortDescription": { "text": "Out-of-bounds Write" },
+              "fullDescription": { "text": "The software writes data past the end, or before the beginning, of the intended buffer, leading to memory corruption and potentially arbitrary code execution or privilege escalation." },
+              "helpUri": "https://cwe.mitre.org/data/definitions/787.html",
+              "properties": { "tags": ["security", "correctness"], "precision": "high", "problem.severity": "error" }
+            },
+            {
+              "id": "CWE-656",
+              "name": "SecurityThroughObscurity",
+              "shortDescription": { "text": "Reliance on Security Through Obscurity" },
+              "fullDescription": { "text": "The software uses a protection mechanism whose strength depends heavily on its obscurity, such that knowledge of its algorithms or key data is sufficient to defeat the mechanism." },
+              "helpUri": "https://cwe.mitre.org/data/definitions/656.html",
+              "properties": { "tags": ["security"], "precision": "high", "problem.severity": "warning" }
+            },
+            {
+              "id": "CWE-829",
+              "name": "InclusionFromUntrustedControlSphere",
+              "shortDescription": { "text": "Inclusion of Functionality from Untrusted Control Sphere" },
+              "fullDescription": { "text": "The software imports, requires, or includes executable functionality from a source that is outside of the intended control sphere." },
+              "helpUri": "https://cwe.mitre.org/data/definitions/829.html",
+              "properties": { "tags": ["security", "supply-chain"], "precision": "high", "problem.severity": "error" }
+            },
+            {
+              "id": "CWE-20",
+              "name": "ImproperInputValidation",
+              "shortDescription": { "text": "Improper Input Validation" },
+              "fullDescription": { "text": "The product receives input or data, but it does not validate or incorrectly validates that the input has the properties that are required to process the data safely and correctly." },
+              "helpUri": "https://cwe.mitre.org/data/definitions/20.html",
+              "properties": { "tags": ["security", "correctness"], "precision": "high", "problem.severity": "error" }
+            },
+            {
+              "id": "CWE-915",
+              "name": "ImproperlyControlledObjectModification",
+              "shortDescription": { "text": "Improperly Controlled Modification of Dynamically-Determined Object Attributes" },
+              "fullDescription": { "text": "The software receives input from an upstream component that specifies multiple attributes, properties, or fields that are to be initialized or updated in an object, but it does not properly control which attributes can be modified." },
+              "helpUri": "https://cwe.mitre.org/data/definitions/915.html",
+              "properties": { "tags": ["security"], "precision": "high", "problem.severity": "error" }
+            },
+            {
+              "id": "CWE-1321",
+              "name": "PrototypePollution",
+              "shortDescription": { "text": "Improperly Controlled Modification of Object Prototype Attributes" },
+              "fullDescription": { "text": "The software receives input from an upstream component that specifies attributes that are to be initialized or updated in an object, but it does not properly control modifications of attributes of the Object prototype, allowing attackers to inject properties into existing JavaScript objects." },
+              "helpUri": "https://cwe.mitre.org/data/definitions/1321.html",
+              "properties": { "tags": ["security"], "precision": "high", "problem.severity": "error" }
+            },
+            {
+              "id": "CWE-362",
+              "name": "RaceCondition",
+              "shortDescription": { "text": "Concurrent Execution Using Shared Resource with Improper Synchronization" },
+              "fullDescription": { "text": "The program contains a code sequence that can run concurrently with other code, and the code sequence requires temporary, exclusive access to a shared resource, but a timing window exists in which the shared resource can be modified by another code sequence that is operating concurrently." },
+              "helpUri": "https://cwe.mitre.org/data/definitions/362.html",
+              "properties": { "tags": ["security", "correctness"], "precision": "high", "problem.severity": "error" }
+            },
+            {
+              "id": "CWE-204",
+              "name": "ObservableResponseDiscrepancy",
+              "shortDescription": { "text": "Observable Response Discrepancy" },
+              "fullDescription": { "text": "The product provides different responses to incoming requests in a way that reveals internal state information to an unauthorized actor, such as whether a valid username exists." },
+              "helpUri": "https://cwe.mitre.org/data/definitions/204.html",
+              "properties": { "tags": ["security", "privacy"], "precision": "high", "problem.severity": "warning" }
+            },
+            {
+              "id": "CWE-209",
+              "name": "ErrorMessageInformationExposure",
+              "shortDescription": { "text": "Generation of Error Message Containing Sensitive Information" },
+              "fullDescription": { "text": "The software generates an error message that includes sensitive information about its environment, users, or associated data." },
+              "helpUri": "https://cwe.mitre.org/data/definitions/209.html",
+              "properties": { "tags": ["security", "privacy"], "precision": "high", "problem.severity": "warning" }
+            },
+            {
+              "id": "CWE-400",
+              "name": "UncontrolledResourceConsumption",
+              "shortDescription": { "text": "Uncontrolled Resource Consumption" },
+              "fullDescription": { "text": "The software does not properly control the allocation and maintenance of a limited resource, thereby enabling an actor to influence the amount of resources consumed, eventually leading to the exhaustion of available resources." },
+              "helpUri": "https://cwe.mitre.org/data/definitions/400.html",
+              "properties": { "tags": ["security", "availability"], "precision": "high", "problem.severity": "warning" }
+            },
+            {
+              "id": "CWE-476",
+              "name": "NullPointerDereference",
+              "shortDescription": { "text": "NULL Pointer Dereference" },
+              "fullDescription": { "text": "A NULL pointer dereference occurs when the application dereferences a pointer that it expects to be valid but is NULL, typically causing a crash or exit." },
+              "helpUri": "https://cwe.mitre.org/data/definitions/476.html",
+              "properties": { "tags": ["correctness", "security"], "precision": "high", "problem.severity": "warning" }
+            },
+            {
+              "id": "CWE-208",
+              "name": "ObservableTimingDiscrepancy",
+              "shortDescription": { "text": "Observable Timing Discrepancy" },
+              "fullDescription": { "text": "Two separate operations in a product require different amounts of time to complete in a way that is observable to an actor and may reveal security-relevant information about the state of the product." },
+              "helpUri": "https://cwe.mitre.org/data/definitions/208.html",
+              "properties": { "tags": ["security"], "precision": "medium", "problem.severity": "note" }
+            },
+            {
+              "id": "CWE-1333",
+              "name": "InefficientRegularExpression",
+              "shortDescription": { "text": "Improper Control of a Regular Expression" },
+              "fullDescription": { "text": "The product uses a regular expression with an inefficient, possibly exponential worst-case computational complexity that consumes excessive CPU cycles." },
+              "helpUri": "https://cwe.mitre.org/data/definitions/1333.html",
+              "properties": { "tags": ["security", "availability"], "precision": "medium", "problem.severity": "note" }
             }
           ]
         }
       },
       "results": [
-        {
-          "ruleId": "CWE-190",
-          "level": "warning",
-          "message": {
-            "text": "Integer arithmetic in validorder() has no bounds checking. Negative amounts or quantities can manipulate net to pass validation without legitimate payment."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": { "uri": "Season-1/Level-1/code.py", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 20, "endLine": 26 }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "CWE-22",
-          "level": "error",
-          "message": {
-            "text": "Path traversal in get_prof_picture(): the check for '/' and '..' prefixes is bypassable. An attacker can use paths like 'subdir/../../etc/passwd' since the traversal sequence is not at the start. os.path.normpath() does not prevent directory escape."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": { "uri": "Season-1/Level-3/code.py", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 25, "endLine": 42 }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "CWE-22",
-          "level": "error",
-          "message": {
-            "text": "Arbitrary file read in get_tax_form_attachment(): the path parameter has no validation. An attacker can supply any absolute path (e.g. /etc/passwd) to read arbitrary files accessible by the process."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": { "uri": "Season-1/Level-3/code.py", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 45, "endLine": 55 }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "CWE-89",
-          "level": "error",
-          "message": {
-            "text": "SQL injection in get_stock_info(): user input is interpolated via .format() into a SQL query. The blocklist check is bypassable (e.g. \"MSFT' OR '1'='1\" passes the 2-quote heuristic but changes query semantics)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": { "uri": "Season-1/Level-4/code.py", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 81, "endLine": 114 }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "CWE-89",
-          "level": "error",
-          "message": {
-            "text": "SQL injection in get_stock_price(): direct string concatenation with user input into SQL query. Use parameterized queries instead."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": { "uri": "Season-1/Level-4/code.py", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 125, "endLine": 152 }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "CWE-89",
-          "level": "error",
-          "message": {
-            "text": "SQL injection in update_stock_price(): user input interpolated via % formatting into SQL UPDATE. An attacker can manipulate stock_symbol to modify all rows."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": { "uri": "Season-1/Level-4/code.py", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 155, "endLine": 184 }
-              }
-            }
-          ]
-        },
+
+
         {
           "ruleId": "CWE-89",
           "level": "error",
@@ -212,7 +228,8 @@
                 "region": { "startLine": 190, "endLine": 216 }
               }
             }
-          ]
+          ],
+          "properties": { "severity": "Critical" }
         },
         {
           "ruleId": "CWE-89",
@@ -227,97 +244,24 @@
                 "region": { "startLine": 221, "endLine": 249 }
               }
             }
-          ]
+          ],
+          "properties": { "severity": "Critical" }
         },
         {
-          "ruleId": "CWE-338",
+          "ruleId": "CWE-22",
           "level": "error",
           "message": {
-            "text": "Weak PRNG in generate_token(): uses random.choice() which is not cryptographically secure. Security tokens must use the secrets module (e.g. secrets.token_urlsafe())."
+            "text": "Arbitrary file read in get_tax_form_attachment(): the path parameter has no validation. An attacker can supply any absolute path (e.g. /etc/passwd) to read arbitrary files accessible by the process."
           },
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-1/Level-5/code.py", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 14, "endLine": 20 }
+                "artifactLocation": { "uri": "Season-1/Level-3/code.py", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 45, "endLine": 55 }
               }
             }
-          ]
-        },
-        {
-          "ruleId": "CWE-338",
-          "level": "error",
-          "message": {
-            "text": "Weak PRNG in generate_salt(): uses random.randint() to construct a bcrypt salt. Salt generation must use bcrypt.gensalt(). Manually constructed salts defeat bcrypt's security guarantees."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": { "uri": "Season-1/Level-5/code.py", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 23, "endLine": 25 }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "CWE-327",
-          "level": "error",
-          "message": {
-            "text": "MD5 used for password hashing in MD5_hasher.password_hash(). MD5 is cryptographically broken, collision-prone, and far too fast for password storage. Use bcrypt, scrypt, or Argon2."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": { "uri": "Season-1/Level-5/code.py", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 41, "endLine": 49 }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "CWE-798",
-          "level": "error",
-          "message": {
-            "text": "Hardcoded SECRET_KEY in source code. This value should be loaded from an environment variable or secrets manager and must never be committed to version control."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": { "uri": "Season-1/Level-5/code.py", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 52, "endLine": 54 }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "CWE-798",
-          "level": "error",
-          "message": {
-            "text": "Hardcoded plaintext credentials in testFakeMockUsers map. Passwords are stored in clear text and embedded in source code. Any user with repo access has valid credentials."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": { "uri": "Season-2/Level-2/code.go", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 40, "endLine": 45 }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "CWE-532",
-          "level": "warning",
-          "message": {
-            "text": "Plaintext password logged on successful login. log.Printf exposes the user's password to anyone with access to application logs. Never log credentials."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": { "uri": "Season-2/Level-2/code.go", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 72, "endLine": 77 }
-              }
-            }
-          ]
+          ],
+          "properties": { "severity": "Critical" }
         },
         {
           "ruleId": "CWE-434",
@@ -332,22 +276,8 @@
                 "region": { "startLine": 27, "endLine": 38 }
               }
             }
-          ]
-        },
-        {
-          "ruleId": "CWE-611",
-          "level": "error",
-          "message": {
-            "text": "XXE injection enabled by libxmljs.parseXml() options: replaceEntities:true and nonet:false allow external entity resolution. An attacker can read arbitrary local files or perform SSRF via crafted XML payloads."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": { "uri": "Season-2/Level-3/code.js", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 40, "endLine": 55 }
-              }
-            }
-          ]
+          ],
+          "properties": { "severity": "Critical" }
         },
         {
           "ruleId": "CWE-78",
@@ -362,97 +292,40 @@
                 "region": { "startLine": 67, "endLine": 81 }
               }
             }
-          ]
+          ],
+          "properties": { "severity": "Critical" }
         },
         {
-          "ruleId": "CWE-79",
+          "ruleId": "CWE-787",
           "level": "error",
           "message": {
-            "text": "Insufficient XSS sanitization in index(): the regex r'[<>{}[\\]]' only strips specific characters. Event handlers (onerror=), data URIs, and style-based XSS vectors are not blocked. The 'script' keyword check is also case-bypassable."
+            "text": "Out-of-bounds write in update_setting(): the index 'i' parsed from user input is checked against SETTINGS_COUNT but never checked for i < 0. A negative index (e.g. \"-7\") computes an address before setting[0] in the struct, landing on the isAdmin field and allowing a non-admin user to escalate privileges."
           },
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-2/Level-4/code.py", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 35, "endLine": 49 }
+                "artifactLocation": { "uri": "Season-1/Level-2/code.h", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 83, "endLine": 86 }
               }
             }
-          ]
+          ],
+          "properties": { "severity": "Critical" }
         },
         {
-          "ruleId": "CWE-1004",
+          "ruleId": "CWE-829",
           "level": "error",
           "message": {
-            "text": "Secret gift code embedded directly in LLM system prompt. An attacker can use prompt injection to instruct the model to reveal the secret. Secrets must never be placed in system prompts; use tool calls or server-side lookups instead."
+            "text": "Untrusted 3rd-party GitHub Action 'dduzgun-security/secure-code-game-action' is included in the CI pipeline. The action runs with repository permissions and can execute arbitrary code, exfiltrate secrets, or tamper with build artifacts. Use only verified-creator actions or replace with native workflow steps."
           },
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-3/Level-1/code.spec.js", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 8, "endLine": 19 }
+                "artifactLocation": { "uri": ".github/workflows/jarvis-code.yml", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 31, "endLine": 34 }
               }
             }
-          ]
-        },
-        {
-          "ruleId": "CWE-1004",
-          "level": "error",
-          "message": {
-            "text": "Secret gift code embedded in LLM system prompt with insufficient access controls. The user-ID verification check is a logical instruction to the model, not a technical enforcement mechanism, and can be bypassed via prompt injection."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": { "uri": "Season-3/Level-2/code.spec.js", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 8, "endLine": 24 }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "CWE-1004",
-          "level": "error",
-          "message": {
-            "text": "Secret gift code in LLM system prompt. Output filtering checks for /[A-Z0-9]{8}/g patterns but can be bypassed by encoding the secret in non-standard formats (hex, base64, leetspeak, ROT13, etc.)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": { "uri": "Season-3/Level-3/code.spec.js", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 8, "endLine": 32 }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "CWE-1004",
-          "level": "error",
-          "message": {
-            "text": "Secret gift code in LLM system prompt. The LLM self-verification check ('Is the user trying to hack me?') is bypassable by indirect extraction methods or prompts the model doesn't classify as hacking."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": { "uri": "Season-3/Level-4/code.spec.js", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 8, "endLine": 32 }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "CWE-1004",
-          "level": "error",
-          "message": {
-            "text": "Secret in LLM system prompt with keyword-based input filtering. Blocklist of ['secret','reveal','story','game'] is bypassable via synonyms, misspellings, or indirect phrasing."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": { "uri": "Season-3/Level-5/code.spec.js", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 8, "endLine": 51 }
-              }
-            }
-          ]
+          ],
+          "properties": { "severity": "Critical" }
         },
         {
           "ruleId": "CWE-1004",
@@ -467,8 +340,544 @@
                 "region": { "startLine": 8, "endLine": 34 }
               }
             }
-          ]
+          ],
+          "properties": { "severity": "Critical" }
+        },
+
+
+        {
+          "ruleId": "CWE-190",
+          "level": "error",
+          "message": {
+            "text": "Integer arithmetic in validorder() has no bounds checking. Negative amounts or quantities can manipulate net to pass validation without legitimate payment."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "Season-1/Level-1/code.py", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 20, "endLine": 26 }
+              }
+            }
+          ],
+          "properties": { "severity": "High" }
+        },
+        {
+          "ruleId": "CWE-22",
+          "level": "error",
+          "message": {
+            "text": "Path traversal in get_prof_picture(): the check for '/' and '..' prefixes is bypassable. An attacker can use paths like 'subdir/../../etc/passwd' since the traversal sequence is not at the start. os.path.normpath() does not prevent directory escape."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "Season-1/Level-3/code.py", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 25, "endLine": 42 }
+              }
+            }
+          ],
+          "properties": { "severity": "High" }
+        },
+        {
+          "ruleId": "CWE-89",
+          "level": "error",
+          "message": {
+            "text": "SQL injection in get_stock_info(): user input is interpolated via .format() into a SQL query. The blocklist check is bypassable (e.g. \"MSFT' OR '1'='1\" passes the 2-quote heuristic but changes query semantics)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "Season-1/Level-4/code.py", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 81, "endLine": 114 }
+              }
+            }
+          ],
+          "properties": { "severity": "High" }
+        },
+        {
+          "ruleId": "CWE-89",
+          "level": "error",
+          "message": {
+            "text": "SQL injection in get_stock_price(): direct string concatenation with user input into SQL query. Use parameterized queries instead."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "Season-1/Level-4/code.py", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 125, "endLine": 152 }
+              }
+            }
+          ],
+          "properties": { "severity": "High" }
+        },
+        {
+          "ruleId": "CWE-89",
+          "level": "error",
+          "message": {
+            "text": "SQL injection in update_stock_price(): user input interpolated via % formatting into SQL UPDATE. An attacker can manipulate stock_symbol to modify all rows."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "Season-1/Level-4/code.py", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 155, "endLine": 184 }
+              }
+            }
+          ],
+          "properties": { "severity": "High" }
+        },
+        {
+          "ruleId": "CWE-338",
+          "level": "error",
+          "message": {
+            "text": "Weak PRNG in generate_token(): uses random.choice() which is not cryptographically secure. Security tokens must use the secrets module (e.g. secrets.token_urlsafe())."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "Season-1/Level-5/code.py", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 14, "endLine": 20 }
+              }
+            }
+          ],
+          "properties": { "severity": "High" }
+        },
+        {
+          "ruleId": "CWE-338",
+          "level": "error",
+          "message": {
+            "text": "Weak PRNG in generate_salt(): uses random.randint() to construct a bcrypt salt. Salt generation must use bcrypt.gensalt(). Manually constructed salts defeat bcrypt's security guarantees."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "Season-1/Level-5/code.py", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 23, "endLine": 25 }
+              }
+            }
+          ],
+          "properties": { "severity": "High" }
+        },
+        {
+          "ruleId": "CWE-327",
+          "level": "error",
+          "message": {
+            "text": "MD5 used for password hashing in MD5_hasher.password_hash(). MD5 is cryptographically broken, collision-prone, and far too fast for password storage. Use bcrypt, scrypt, or Argon2."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "Season-1/Level-5/code.py", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 41, "endLine": 49 }
+              }
+            }
+          ],
+          "properties": { "severity": "High" }
+        },
+        {
+          "ruleId": "CWE-798",
+          "level": "error",
+          "message": {
+            "text": "Hardcoded SECRET_KEY in source code. This value should be loaded from an environment variable or secrets manager and must never be committed to version control."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "Season-1/Level-5/code.py", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 52, "endLine": 54 }
+              }
+            }
+          ],
+          "properties": { "severity": "High" }
+        },
+        {
+          "ruleId": "CWE-798",
+          "level": "error",
+          "message": {
+            "text": "Hardcoded plaintext credentials in testFakeMockUsers map. Passwords are stored in clear text and embedded in source code. Any user with repo access has valid credentials."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "Season-2/Level-2/code.go", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 40, "endLine": 45 }
+              }
+            }
+          ],
+          "properties": { "severity": "High" }
+        },
+        {
+          "ruleId": "CWE-532",
+          "level": "error",
+          "message": {
+            "text": "Plaintext password logged on successful login. log.Printf exposes the user's password to anyone with access to application logs. Never log credentials."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "Season-2/Level-2/code.go", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 72, "endLine": 77 }
+              }
+            }
+          ],
+          "properties": { "severity": "High" }
+        },
+        {
+          "ruleId": "CWE-611",
+          "level": "error",
+          "message": {
+            "text": "XXE injection enabled by libxmljs.parseXml() options: replaceEntities:true and nonet:false allow external entity resolution. An attacker can read arbitrary local files or perform SSRF via crafted XML payloads."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "Season-2/Level-3/code.js", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 40, "endLine": 55 }
+              }
+            }
+          ],
+          "properties": { "severity": "High" }
+        },
+        {
+          "ruleId": "CWE-79",
+          "level": "error",
+          "message": {
+            "text": "Insufficient XSS sanitization in index(): the regex r'[<>{}[\\]]' only strips specific characters. Event handlers (onerror=), data URIs, and style-based XSS vectors are not blocked. The 'script' keyword check is also case-bypassable."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "Season-2/Level-4/code.py", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 35, "endLine": 49 }
+              }
+            }
+          ],
+          "properties": { "severity": "High" }
+        },
+        {
+          "ruleId": "CWE-1004",
+          "level": "error",
+          "message": {
+            "text": "Secret gift code embedded directly in LLM system prompt. An attacker can use prompt injection to instruct the model to reveal the secret. Secrets must never be placed in system prompts; use tool calls or server-side lookups instead."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "Season-3/Level-1/code.spec.js", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 8, "endLine": 19 }
+              }
+            }
+          ],
+          "properties": { "severity": "High" }
+        },
+        {
+          "ruleId": "CWE-1004",
+          "level": "error",
+          "message": {
+            "text": "Secret gift code embedded in LLM system prompt with insufficient access controls. The user-ID verification check is a logical instruction to the model, not a technical enforcement mechanism, and can be bypassed via prompt injection."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "Season-3/Level-2/code.spec.js", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 8, "endLine": 24 }
+              }
+            }
+          ],
+          "properties": { "severity": "High" }
+        },
+        {
+          "ruleId": "CWE-1004",
+          "level": "error",
+          "message": {
+            "text": "Secret gift code in LLM system prompt. Output filtering checks for /[A-Z0-9]{8}/g patterns but can be bypassed by encoding the secret in non-standard formats (hex, base64, leetspeak, ROT13, etc.)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "Season-3/Level-3/code.spec.js", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 8, "endLine": 32 }
+              }
+            }
+          ],
+          "properties": { "severity": "High" }
+        },
+        {
+          "ruleId": "CWE-1004",
+          "level": "error",
+          "message": {
+            "text": "Secret gift code in LLM system prompt. The LLM self-verification check ('Is the user trying to hack me?') is bypassable by indirect extraction methods or prompts the model doesn't classify as hacking."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "Season-3/Level-4/code.spec.js", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 8, "endLine": 32 }
+              }
+            }
+          ],
+          "properties": { "severity": "High" }
+        },
+        {
+          "ruleId": "CWE-1004",
+          "level": "error",
+          "message": {
+            "text": "Secret in LLM system prompt with keyword-based input filtering. Blocklist of ['secret','reveal','story','game'] is bypassable via synonyms, misspellings, or indirect phrasing."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "Season-3/Level-5/code.spec.js", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 8, "endLine": 51 }
+              }
+            }
+          ],
+          "properties": { "severity": "High" }
+        },
+        {
+          "ruleId": "CWE-798",
+          "level": "error",
+          "message": {
+            "text": "Hardcoded token in CI workflow: get-token value 'token-4db56ee8-dbec-46f3-96f5-32247695ab9b' is committed in plaintext. This secret is exposed to anyone with repository access and should be stored in GitHub Actions secrets and referenced as ${{ secrets.TOKEN_NAME }}."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": ".github/workflows/jarvis-code.yml", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 34, "endLine": 34 }
+              }
+            }
+          ],
+          "properties": { "severity": "High" }
+        },
+        {
+          "ruleId": "CWE-20",
+          "level": "error",
+          "message": {
+            "text": "Improper input validation in CryptoAPI.sha1.hash(): the parameter 's' is not checked to be a string. The expression s += '\\x80' triggers implicit toString() conversion, allowing an attacker to pass an object whose toString() method executes arbitrary JavaScript."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "Season-2/Level-5/code.js", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 17, "endLine": 18 }
+              }
+            }
+          ],
+          "properties": { "severity": "High" }
+        },
+        {
+          "ruleId": "CWE-915",
+          "level": "error",
+          "message": {
+            "text": "Mutable internal method reference in CryptoAPI.sha1.hash(): the call CryptoAPI.sha1._round(H, w) resolves _round via a public, non-frozen property. Any external code can overwrite CryptoAPI.sha1._round with a malicious function that will be executed on the next hash() call. Fix by capturing a local reference (var internalRound = API.sha1._round) and calling that instead."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "Season-2/Level-5/code.js", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 45, "endLine": 45 }
+              }
+            }
+          ],
+          "properties": { "severity": "High" }
+        },
+        {
+          "ruleId": "CWE-1321",
+          "level": "error",
+          "message": {
+            "text": "Prototype pollution via uninitialized array in CryptoAPI.sha1.hash(): 'w' is declared as an empty array ([]). Writes to w[0..127] can trigger malicious setters injected into Array.prototype before the library loads (e.g. via Array.prototype.__defineSetter__). Fix by pre-initializing w with all 128 elements explicitly so own properties shadow any prototype setters."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "Season-2/Level-5/code.js", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 25, "endLine": 25 }
+              }
+            }
+          ],
+          "properties": { "severity": "High" }
+        },
+        {
+          "ruleId": "CWE-362",
+          "level": "error",
+          "message": {
+            "text": "Race condition on global reqBody: the struct is declared at package level and shared across all concurrent HTTP request goroutines. Two simultaneous requests both call decode.Decode(&reqBody), so one request's email/password can overwrite the other's before the authentication check runs, potentially allowing credential mixing or authentication bypass. Fix: declare reqBody as a local variable inside loginHandler."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "Season-2/Level-2/code.go", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 21, "endLine": 24 }
+              }
+            }
+          ],
+          "properties": { "severity": "High" }
+        },
+        {
+          "ruleId": "CWE-79",
+          "level": "error",
+          "message": {
+            "text": "Jinja2 auto-escaping explicitly disabled via '| safe' filter on the user-controlled planet variable. This makes the insufficient sanitization in code.py directly exploitable: any XSS payload that survives the regex strip is rendered as raw HTML into the page."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "Season-2/Level-4/templates/details.html", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 22, "endLine": 22 }
+              }
+            }
+          ],
+          "properties": { "severity": "High" }
+        },
+
+
+        {
+          "ruleId": "CWE-656",
+          "level": "warning",
+          "message": {
+            "text": "Security through obscurity: the user_account struct layout (including the isAdmin field at offset 0) is treated as the sole protection against privilege escalation. Once the layout is known or reverse-engineered, the negative-index vulnerability in update_setting() becomes trivially exploitable."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "Season-1/Level-2/code.h", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 32, "endLine": 37 }
+              }
+            }
+          ],
+          "properties": { "severity": "Medium" }
+        },
+        {
+          "ruleId": "CWE-204",
+          "level": "warning",
+          "message": {
+            "text": "User enumeration via response discrepancy: when an email is not found in the user map the handler returns 'invalid email or password' (all lowercase), but when the password is wrong it returns 'Invalid Email or Password' (title case). An attacker can distinguish valid accounts from invalid ones by observing the capitalisation of the 401 response body."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "Season-2/Level-2/code.go", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 68, "endLine": 76 }
+              }
+            }
+          ],
+          "properties": { "severity": "Medium" }
+        },
+        {
+          "ruleId": "CWE-79",
+          "level": "warning",
+          "message": {
+            "text": "DOM XSS sink: the script reads the server-rendered planet name via textContent (which decodes HTML entities) and writes it into a second element via innerHTML (which executes them). An attacker whose payload survives the server-side sanitization can have it re-executed client-side through this innerHTML assignment."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "Season-2/Level-4/templates/details.html", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 26, "endLine": 28 }
+              }
+            }
+          ],
+          "properties": { "severity": "Medium" }
+        },
+        {
+          "ruleId": "CWE-209",
+          "level": "warning",
+          "message": {
+            "text": "Information exposure through error message: 'Invalid XML: ' + error.message sends the raw libxmljs parser error to the client. Parser error messages can reveal file paths, library versions, and document structure useful for refining an XXE attack."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "Season-2/Level-3/code.js", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 89, "endLine": 90 }
+              }
+            }
+          ],
+          "properties": { "severity": "Medium" }
+        },
+        {
+          "ruleId": "CWE-400",
+          "level": "warning",
+          "message": {
+            "text": "Uncontrolled resource consumption: multer is configured with memoryStorage() and no file size limit. An attacker can upload arbitrarily large files to exhaust server memory before the file is written to disk, or fill the filesystem after."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "Season-2/Level-3/code.js", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 24, "endLine": 25 }
+              }
+            }
+          ],
+          "properties": { "severity": "Medium" }
+        },
+        {
+          "ruleId": "CWE-476",
+          "level": "warning",
+          "message": {
+            "text": "Null pointer dereference from double-increment bug in create_user_account(): userid_next is incremented twice per call (once in ua->userid = userid_next++ and once in return userid_next++), storing the account at accounts[userid_next] after the first increment. This leaves accounts[0] and all even-indexed slots as NULL. Any call to is_admin() or username() with an even-numbered user ID passes the bounds check but dereferences a NULL pointer."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "Season-1/Level-2/code.h", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 63, "endLine": 67 }
+              }
+            }
+          ],
+          "properties": { "severity": "Medium" }
+        },
+
+
+        {
+          "ruleId": "CWE-532",
+          "level": "note",
+          "message": {
+            "text": "User-supplied email address written to logs on invalid-format rejection: log.Printf(\"Invalid email format: %q\", email) records attacker-controlled input. Malformed or oversized emails end up in log files, potentially aiding log injection or exposing user data."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "Season-2/Level-2/code.go", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 61, "endLine": 61 }
+              }
+            }
+          ],
+          "properties": { "severity": "Low" }
+        },
+        {
+          "ruleId": "CWE-208",
+          "level": "note",
+          "message": {
+            "text": "Observable timing discrepancy: password == storedPassword uses Go's native string equality which is not constant-time. A remote attacker making repeated login attempts can measure response time differences to infer whether password prefix bytes match, enabling a timing-based attack. Use subtle.ConstantTimeCompare instead."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "Season-2/Level-2/code.go", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 72, "endLine": 72 }
+              }
+            }
+          ],
+          "properties": { "severity": "Low" }
+        },
+        {
+          "ruleId": "CWE-1333",
+          "level": "note",
+          "message": {
+            "text": "Unsafe regular expression in generateRegex(): the function joins every character of the secret with .* (e.g. A.*B.*C.*...) and applies it with RegExp. Against a long model response that almost-but-not-quite matches, the engine backtracks exponentially. With longer secrets the worst-case time grows rapidly. Use a linear-time string search instead of a generated regex."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "Season-3/.utils/utils.js", "uriBaseId": "%SRCROOT%" },
+                "region": { "startLine": 44, "endLine": 48 }
+              }
+            }
+          ],
+          "properties": { "severity": "Low" }
         }
+
       ]
     }
   ]
