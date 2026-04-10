@@ -12,209 +12,475 @@
             {
               "id": "CWE-190",
               "name": "IntegerOverflow",
-              "shortDescription": { "text": "Integer Overflow or Wraparound" },
-              "fullDescription": { "text": "Arithmetic operations can produce values that exceed the storage capacity of the integer type, leading to unexpected behavior." },
+              "shortDescription": {
+                "text": "Integer Overflow or Wraparound"
+              },
+              "fullDescription": {
+                "text": "Arithmetic operations can produce values that exceed the storage capacity of the integer type, leading to unexpected behavior."
+              },
               "helpUri": "https://cwe.mitre.org/data/definitions/190.html",
-              "properties": { "tags": ["correctness", "security"], "precision": "high", "problem.severity": "warning" }
+              "properties": {
+                "tags": [
+                  "correctness",
+                  "security"
+                ],
+                "precision": "high",
+                "problem.severity": "warning"
+              }
             },
             {
               "id": "CWE-22",
               "name": "PathTraversal",
-              "shortDescription": { "text": "Improper Limitation of a Pathname to a Restricted Directory" },
-              "fullDescription": { "text": "The software uses external input to construct a pathname that is intended to identify a file or directory that is located underneath a restricted parent directory, but does not properly neutralize special elements within the pathname." },
+              "shortDescription": {
+                "text": "Improper Limitation of a Pathname to a Restricted Directory"
+              },
+              "fullDescription": {
+                "text": "The software uses external input to construct a pathname that is intended to identify a file or directory that is located underneath a restricted parent directory, but does not properly neutralize special elements within the pathname."
+              },
               "helpUri": "https://cwe.mitre.org/data/definitions/22.html",
-              "properties": { "tags": ["security"], "precision": "high", "problem.severity": "error" }
+              "properties": {
+                "tags": [
+                  "security"
+                ],
+                "precision": "high",
+                "problem.severity": "error"
+              }
             },
             {
               "id": "CWE-89",
               "name": "SQLInjection",
-              "shortDescription": { "text": "Improper Neutralization of Special Elements used in an SQL Command" },
-              "fullDescription": { "text": "User-controlled input is incorporated into SQL queries without proper sanitization or parameterization, allowing an attacker to manipulate the query logic." },
+              "shortDescription": {
+                "text": "Improper Neutralization of Special Elements used in an SQL Command"
+              },
+              "fullDescription": {
+                "text": "User-controlled input is incorporated into SQL queries without proper sanitization or parameterization, allowing an attacker to manipulate the query logic."
+              },
               "helpUri": "https://cwe.mitre.org/data/definitions/89.html",
-              "properties": { "tags": ["security", "correctness"], "precision": "very-high", "problem.severity": "error" }
+              "properties": {
+                "tags": [
+                  "security",
+                  "correctness"
+                ],
+                "precision": "very-high",
+                "problem.severity": "error"
+              }
             },
             {
               "id": "CWE-338",
               "name": "WeakPRNG",
-              "shortDescription": { "text": "Use of Cryptographically Weak Pseudo-Random Number Generator" },
-              "fullDescription": { "text": "The product uses a Pseudo-Random Number Generator (PRNG) in a security context, but the PRNG is not cryptographically strong." },
+              "shortDescription": {
+                "text": "Use of Cryptographically Weak Pseudo-Random Number Generator"
+              },
+              "fullDescription": {
+                "text": "The product uses a Pseudo-Random Number Generator (PRNG) in a security context, but the PRNG is not cryptographically strong."
+              },
               "helpUri": "https://cwe.mitre.org/data/definitions/338.html",
-              "properties": { "tags": ["security", "cryptography"], "precision": "high", "problem.severity": "error" }
+              "properties": {
+                "tags": [
+                  "security",
+                  "cryptography"
+                ],
+                "precision": "high",
+                "problem.severity": "error"
+              }
             },
             {
               "id": "CWE-327",
               "name": "BrokenCryptoAlgorithm",
-              "shortDescription": { "text": "Use of a Broken or Risky Cryptographic Algorithm" },
-              "fullDescription": { "text": "The use of a broken or risky cryptographic algorithm is an unnecessary risk that may result in the exposure of sensitive information." },
+              "shortDescription": {
+                "text": "Use of a Broken or Risky Cryptographic Algorithm"
+              },
+              "fullDescription": {
+                "text": "The use of a broken or risky cryptographic algorithm is an unnecessary risk that may result in the exposure of sensitive information."
+              },
               "helpUri": "https://cwe.mitre.org/data/definitions/327.html",
-              "properties": { "tags": ["security", "cryptography"], "precision": "very-high", "problem.severity": "error" }
+              "properties": {
+                "tags": [
+                  "security",
+                  "cryptography"
+                ],
+                "precision": "very-high",
+                "problem.severity": "error"
+              }
             },
             {
               "id": "CWE-798",
               "name": "HardcodedCredentials",
-              "shortDescription": { "text": "Use of Hard-coded Credentials" },
-              "fullDescription": { "text": "The software contains hard-coded credentials, such as a password or cryptographic key, which it uses for authentication or for forming connections to resources." },
+              "shortDescription": {
+                "text": "Use of Hard-coded Credentials"
+              },
+              "fullDescription": {
+                "text": "The software contains hard-coded credentials, such as a password or cryptographic key, which it uses for authentication or for forming connections to resources."
+              },
               "helpUri": "https://cwe.mitre.org/data/definitions/798.html",
-              "properties": { "tags": ["security", "maintainability"], "precision": "very-high", "problem.severity": "error" }
+              "properties": {
+                "tags": [
+                  "security",
+                  "maintainability"
+                ],
+                "precision": "very-high",
+                "problem.severity": "error"
+              }
             },
             {
               "id": "CWE-532",
               "name": "SensitiveDataInLogs",
-              "shortDescription": { "text": "Information Exposure Through Log Files" },
-              "fullDescription": { "text": "Information written to log files can be of a sensitive nature and give valuable guidance to an attacker or expose sensitive user information." },
+              "shortDescription": {
+                "text": "Information Exposure Through Log Files"
+              },
+              "fullDescription": {
+                "text": "Information written to log files can be of a sensitive nature and give valuable guidance to an attacker or expose sensitive user information."
+              },
               "helpUri": "https://cwe.mitre.org/data/definitions/532.html",
-              "properties": { "tags": ["security", "privacy"], "precision": "high", "problem.severity": "warning" }
+              "properties": {
+                "tags": [
+                  "security",
+                  "privacy"
+                ],
+                "precision": "high",
+                "problem.severity": "warning"
+              }
             },
             {
               "id": "CWE-434",
               "name": "UnrestrictedFileUpload",
-              "shortDescription": { "text": "Unrestricted Upload of File with Dangerous Type" },
-              "fullDescription": { "text": "The software allows the upload of files with dangerous types that can be automatically processed within the product's environment." },
+              "shortDescription": {
+                "text": "Unrestricted Upload of File with Dangerous Type"
+              },
+              "fullDescription": {
+                "text": "The software allows the upload of files with dangerous types that can be automatically processed within the product's environment."
+              },
               "helpUri": "https://cwe.mitre.org/data/definitions/434.html",
-              "properties": { "tags": ["security"], "precision": "high", "problem.severity": "error" }
+              "properties": {
+                "tags": [
+                  "security"
+                ],
+                "precision": "high",
+                "problem.severity": "error"
+              }
             },
             {
               "id": "CWE-611",
               "name": "XXEInjection",
-              "shortDescription": { "text": "Improper Restriction of XML External Entity Reference" },
-              "fullDescription": { "text": "The software processes an XML document that can contain XML entities with URIs that resolve to documents outside of the intended sphere of control." },
+              "shortDescription": {
+                "text": "Improper Restriction of XML External Entity Reference"
+              },
+              "fullDescription": {
+                "text": "The software processes an XML document that can contain XML entities with URIs that resolve to documents outside of the intended sphere of control."
+              },
               "helpUri": "https://cwe.mitre.org/data/definitions/611.html",
-              "properties": { "tags": ["security"], "precision": "high", "problem.severity": "error" }
+              "properties": {
+                "tags": [
+                  "security"
+                ],
+                "precision": "high",
+                "problem.severity": "error"
+              }
             },
             {
               "id": "CWE-78",
               "name": "CommandInjection",
-              "shortDescription": { "text": "Improper Neutralization of Special Elements used in an OS Command" },
-              "fullDescription": { "text": "User-controlled input is passed to an OS command execution function without proper neutralization, allowing arbitrary command execution." },
+              "shortDescription": {
+                "text": "Improper Neutralization of Special Elements used in an OS Command"
+              },
+              "fullDescription": {
+                "text": "User-controlled input is passed to an OS command execution function without proper neutralization, allowing arbitrary command execution."
+              },
               "helpUri": "https://cwe.mitre.org/data/definitions/78.html",
-              "properties": { "tags": ["security", "correctness"], "precision": "high", "problem.severity": "error" }
+              "properties": {
+                "tags": [
+                  "security",
+                  "correctness"
+                ],
+                "precision": "high",
+                "problem.severity": "error"
+              }
             },
             {
               "id": "CWE-79",
               "name": "XSS",
-              "shortDescription": { "text": "Improper Neutralization of Input During Web Page Generation (Cross-site Scripting)" },
-              "fullDescription": { "text": "The software does not neutralize or incorrectly neutralizes user-controllable input before it is placed in output that is used as a web page that is served to other users." },
+              "shortDescription": {
+                "text": "Improper Neutralization of Input During Web Page Generation (Cross-site Scripting)"
+              },
+              "fullDescription": {
+                "text": "The software does not neutralize or incorrectly neutralizes user-controllable input before it is placed in output that is used as a web page that is served to other users."
+              },
               "helpUri": "https://cwe.mitre.org/data/definitions/79.html",
-              "properties": { "tags": ["security", "correctness"], "precision": "high", "problem.severity": "error" }
+              "properties": {
+                "tags": [
+                  "security",
+                  "correctness"
+                ],
+                "precision": "high",
+                "problem.severity": "error"
+              }
             },
             {
               "id": "CWE-1004",
               "name": "PromptInjection",
-              "shortDescription": { "text": "Sensitive Information Embedded in LLM System Prompt" },
-              "fullDescription": { "text": "Sensitive data embedded in LLM system prompts can be extracted via prompt injection attacks. Secrets should never be placed in system prompts." },
+              "shortDescription": {
+                "text": "Sensitive Information Embedded in LLM System Prompt"
+              },
+              "fullDescription": {
+                "text": "Sensitive data embedded in LLM system prompts can be extracted via prompt injection attacks. Secrets should never be placed in system prompts."
+              },
               "helpUri": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
-              "properties": { "tags": ["security", "ai"], "precision": "high", "problem.severity": "error" }
+              "properties": {
+                "tags": [
+                  "security",
+                  "ai"
+                ],
+                "precision": "high",
+                "problem.severity": "error"
+              }
             },
             {
               "id": "CWE-787",
               "name": "OutOfBoundsWrite",
-              "shortDescription": { "text": "Out-of-bounds Write" },
-              "fullDescription": { "text": "The software writes data past the end, or before the beginning, of the intended buffer, leading to memory corruption and potentially arbitrary code execution or privilege escalation." },
+              "shortDescription": {
+                "text": "Out-of-bounds Write"
+              },
+              "fullDescription": {
+                "text": "The software writes data past the end, or before the beginning, of the intended buffer, leading to memory corruption and potentially arbitrary code execution or privilege escalation."
+              },
               "helpUri": "https://cwe.mitre.org/data/definitions/787.html",
-              "properties": { "tags": ["security", "correctness"], "precision": "high", "problem.severity": "error" }
+              "properties": {
+                "tags": [
+                  "security",
+                  "correctness"
+                ],
+                "precision": "high",
+                "problem.severity": "error"
+              }
             },
             {
               "id": "CWE-656",
               "name": "SecurityThroughObscurity",
-              "shortDescription": { "text": "Reliance on Security Through Obscurity" },
-              "fullDescription": { "text": "The software uses a protection mechanism whose strength depends heavily on its obscurity, such that knowledge of its algorithms or key data is sufficient to defeat the mechanism." },
+              "shortDescription": {
+                "text": "Reliance on Security Through Obscurity"
+              },
+              "fullDescription": {
+                "text": "The software uses a protection mechanism whose strength depends heavily on its obscurity, such that knowledge of its algorithms or key data is sufficient to defeat the mechanism."
+              },
               "helpUri": "https://cwe.mitre.org/data/definitions/656.html",
-              "properties": { "tags": ["security"], "precision": "high", "problem.severity": "warning" }
+              "properties": {
+                "tags": [
+                  "security"
+                ],
+                "precision": "high",
+                "problem.severity": "warning"
+              }
             },
             {
               "id": "CWE-829",
               "name": "InclusionFromUntrustedControlSphere",
-              "shortDescription": { "text": "Inclusion of Functionality from Untrusted Control Sphere" },
-              "fullDescription": { "text": "The software imports, requires, or includes executable functionality from a source that is outside of the intended control sphere." },
+              "shortDescription": {
+                "text": "Inclusion of Functionality from Untrusted Control Sphere"
+              },
+              "fullDescription": {
+                "text": "The software imports, requires, or includes executable functionality from a source that is outside of the intended control sphere."
+              },
               "helpUri": "https://cwe.mitre.org/data/definitions/829.html",
-              "properties": { "tags": ["security", "supply-chain"], "precision": "high", "problem.severity": "error" }
+              "properties": {
+                "tags": [
+                  "security",
+                  "supply-chain"
+                ],
+                "precision": "high",
+                "problem.severity": "error"
+              }
             },
             {
               "id": "CWE-20",
               "name": "ImproperInputValidation",
-              "shortDescription": { "text": "Improper Input Validation" },
-              "fullDescription": { "text": "The product receives input or data, but it does not validate or incorrectly validates that the input has the properties that are required to process the data safely and correctly." },
+              "shortDescription": {
+                "text": "Improper Input Validation"
+              },
+              "fullDescription": {
+                "text": "The product receives input or data, but it does not validate or incorrectly validates that the input has the properties that are required to process the data safely and correctly."
+              },
               "helpUri": "https://cwe.mitre.org/data/definitions/20.html",
-              "properties": { "tags": ["security", "correctness"], "precision": "high", "problem.severity": "error" }
+              "properties": {
+                "tags": [
+                  "security",
+                  "correctness"
+                ],
+                "precision": "high",
+                "problem.severity": "error"
+              }
             },
             {
               "id": "CWE-915",
               "name": "ImproperlyControlledObjectModification",
-              "shortDescription": { "text": "Improperly Controlled Modification of Dynamically-Determined Object Attributes" },
-              "fullDescription": { "text": "The software receives input from an upstream component that specifies multiple attributes, properties, or fields that are to be initialized or updated in an object, but it does not properly control which attributes can be modified." },
+              "shortDescription": {
+                "text": "Improperly Controlled Modification of Dynamically-Determined Object Attributes"
+              },
+              "fullDescription": {
+                "text": "The software receives input from an upstream component that specifies multiple attributes, properties, or fields that are to be initialized or updated in an object, but it does not properly control which attributes can be modified."
+              },
               "helpUri": "https://cwe.mitre.org/data/definitions/915.html",
-              "properties": { "tags": ["security"], "precision": "high", "problem.severity": "error" }
+              "properties": {
+                "tags": [
+                  "security"
+                ],
+                "precision": "high",
+                "problem.severity": "error"
+              }
             },
             {
               "id": "CWE-1321",
               "name": "PrototypePollution",
-              "shortDescription": { "text": "Improperly Controlled Modification of Object Prototype Attributes" },
-              "fullDescription": { "text": "The software receives input from an upstream component that specifies attributes that are to be initialized or updated in an object, but it does not properly control modifications of attributes of the Object prototype, allowing attackers to inject properties into existing JavaScript objects." },
+              "shortDescription": {
+                "text": "Improperly Controlled Modification of Object Prototype Attributes"
+              },
+              "fullDescription": {
+                "text": "The software receives input from an upstream component that specifies attributes that are to be initialized or updated in an object, but it does not properly control modifications of attributes of the Object prototype, allowing attackers to inject properties into existing JavaScript objects."
+              },
               "helpUri": "https://cwe.mitre.org/data/definitions/1321.html",
-              "properties": { "tags": ["security"], "precision": "high", "problem.severity": "error" }
+              "properties": {
+                "tags": [
+                  "security"
+                ],
+                "precision": "high",
+                "problem.severity": "error"
+              }
             },
             {
               "id": "CWE-362",
               "name": "RaceCondition",
-              "shortDescription": { "text": "Concurrent Execution Using Shared Resource with Improper Synchronization" },
-              "fullDescription": { "text": "The program contains a code sequence that can run concurrently with other code, and the code sequence requires temporary, exclusive access to a shared resource, but a timing window exists in which the shared resource can be modified by another code sequence that is operating concurrently." },
+              "shortDescription": {
+                "text": "Concurrent Execution Using Shared Resource with Improper Synchronization"
+              },
+              "fullDescription": {
+                "text": "The program contains a code sequence that can run concurrently with other code, and the code sequence requires temporary, exclusive access to a shared resource, but a timing window exists in which the shared resource can be modified by another code sequence that is operating concurrently."
+              },
               "helpUri": "https://cwe.mitre.org/data/definitions/362.html",
-              "properties": { "tags": ["security", "correctness"], "precision": "high", "problem.severity": "error" }
+              "properties": {
+                "tags": [
+                  "security",
+                  "correctness"
+                ],
+                "precision": "high",
+                "problem.severity": "error"
+              }
             },
             {
               "id": "CWE-204",
               "name": "ObservableResponseDiscrepancy",
-              "shortDescription": { "text": "Observable Response Discrepancy" },
-              "fullDescription": { "text": "The product provides different responses to incoming requests in a way that reveals internal state information to an unauthorized actor, such as whether a valid username exists." },
+              "shortDescription": {
+                "text": "Observable Response Discrepancy"
+              },
+              "fullDescription": {
+                "text": "The product provides different responses to incoming requests in a way that reveals internal state information to an unauthorized actor, such as whether a valid username exists."
+              },
               "helpUri": "https://cwe.mitre.org/data/definitions/204.html",
-              "properties": { "tags": ["security", "privacy"], "precision": "high", "problem.severity": "warning" }
+              "properties": {
+                "tags": [
+                  "security",
+                  "privacy"
+                ],
+                "precision": "high",
+                "problem.severity": "warning"
+              }
             },
             {
               "id": "CWE-209",
               "name": "ErrorMessageInformationExposure",
-              "shortDescription": { "text": "Generation of Error Message Containing Sensitive Information" },
-              "fullDescription": { "text": "The software generates an error message that includes sensitive information about its environment, users, or associated data." },
+              "shortDescription": {
+                "text": "Generation of Error Message Containing Sensitive Information"
+              },
+              "fullDescription": {
+                "text": "The software generates an error message that includes sensitive information about its environment, users, or associated data."
+              },
               "helpUri": "https://cwe.mitre.org/data/definitions/209.html",
-              "properties": { "tags": ["security", "privacy"], "precision": "high", "problem.severity": "warning" }
+              "properties": {
+                "tags": [
+                  "security",
+                  "privacy"
+                ],
+                "precision": "high",
+                "problem.severity": "warning"
+              }
             },
             {
               "id": "CWE-400",
               "name": "UncontrolledResourceConsumption",
-              "shortDescription": { "text": "Uncontrolled Resource Consumption" },
-              "fullDescription": { "text": "The software does not properly control the allocation and maintenance of a limited resource, thereby enabling an actor to influence the amount of resources consumed, eventually leading to the exhaustion of available resources." },
+              "shortDescription": {
+                "text": "Uncontrolled Resource Consumption"
+              },
+              "fullDescription": {
+                "text": "The software does not properly control the allocation and maintenance of a limited resource, thereby enabling an actor to influence the amount of resources consumed, eventually leading to the exhaustion of available resources."
+              },
               "helpUri": "https://cwe.mitre.org/data/definitions/400.html",
-              "properties": { "tags": ["security", "availability"], "precision": "high", "problem.severity": "warning" }
+              "properties": {
+                "tags": [
+                  "security",
+                  "availability"
+                ],
+                "precision": "high",
+                "problem.severity": "warning"
+              }
             },
             {
               "id": "CWE-476",
               "name": "NullPointerDereference",
-              "shortDescription": { "text": "NULL Pointer Dereference" },
-              "fullDescription": { "text": "A NULL pointer dereference occurs when the application dereferences a pointer that it expects to be valid but is NULL, typically causing a crash or exit." },
+              "shortDescription": {
+                "text": "NULL Pointer Dereference"
+              },
+              "fullDescription": {
+                "text": "A NULL pointer dereference occurs when the application dereferences a pointer that it expects to be valid but is NULL, typically causing a crash or exit."
+              },
               "helpUri": "https://cwe.mitre.org/data/definitions/476.html",
-              "properties": { "tags": ["correctness", "security"], "precision": "high", "problem.severity": "warning" }
+              "properties": {
+                "tags": [
+                  "correctness",
+                  "security"
+                ],
+                "precision": "high",
+                "problem.severity": "warning"
+              }
             },
             {
               "id": "CWE-208",
               "name": "ObservableTimingDiscrepancy",
-              "shortDescription": { "text": "Observable Timing Discrepancy" },
-              "fullDescription": { "text": "Two separate operations in a product require different amounts of time to complete in a way that is observable to an actor and may reveal security-relevant information about the state of the product." },
+              "shortDescription": {
+                "text": "Observable Timing Discrepancy"
+              },
+              "fullDescription": {
+                "text": "Two separate operations in a product require different amounts of time to complete in a way that is observable to an actor and may reveal security-relevant information about the state of the product."
+              },
               "helpUri": "https://cwe.mitre.org/data/definitions/208.html",
-              "properties": { "tags": ["security"], "precision": "medium", "problem.severity": "note" }
+              "properties": {
+                "tags": [
+                  "security"
+                ],
+                "precision": "medium",
+                "problem.severity": "note"
+              }
             },
             {
               "id": "CWE-1333",
               "name": "InefficientRegularExpression",
-              "shortDescription": { "text": "Improper Control of a Regular Expression" },
-              "fullDescription": { "text": "The product uses a regular expression with an inefficient, possibly exponential worst-case computational complexity that consumes excessive CPU cycles." },
+              "shortDescription": {
+                "text": "Improper Control of a Regular Expression"
+              },
+              "fullDescription": {
+                "text": "The product uses a regular expression with an inefficient, possibly exponential worst-case computational complexity that consumes excessive CPU cycles."
+              },
               "helpUri": "https://cwe.mitre.org/data/definitions/1333.html",
-              "properties": { "tags": ["security", "availability"], "precision": "medium", "problem.severity": "note" }
+              "properties": {
+                "tags": [
+                  "security",
+                  "availability"
+                ],
+                "precision": "medium",
+                "problem.severity": "note"
+              }
             }
           ]
         }
       },
       "results": [
-
-
         {
           "ruleId": "CWE-89",
           "level": "error",
@@ -224,12 +490,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-1/Level-4/code.py", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 190, "endLine": 216 }
+                "artifactLocation": {
+                  "uri": "Season-1/Level-4/code.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 190,
+                  "endLine": 216
+                }
               }
             }
           ],
-          "properties": { "severity": "Critical" }
+          "properties": {
+            "severity": "Critical",
+            "security-severity": "9.5"
+          }
         },
         {
           "ruleId": "CWE-89",
@@ -240,12 +515,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-1/Level-4/code.py", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 221, "endLine": 249 }
+                "artifactLocation": {
+                  "uri": "Season-1/Level-4/code.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 221,
+                  "endLine": 249
+                }
               }
             }
           ],
-          "properties": { "severity": "Critical" }
+          "properties": {
+            "severity": "Critical",
+            "security-severity": "9.5"
+          }
         },
         {
           "ruleId": "CWE-22",
@@ -256,12 +540,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-1/Level-3/code.py", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 45, "endLine": 55 }
+                "artifactLocation": {
+                  "uri": "Season-1/Level-3/code.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 45,
+                  "endLine": 55
+                }
               }
             }
           ],
-          "properties": { "severity": "Critical" }
+          "properties": {
+            "severity": "Critical",
+            "security-severity": "9.5"
+          }
         },
         {
           "ruleId": "CWE-434",
@@ -272,12 +565,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-2/Level-3/code.js", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 27, "endLine": 38 }
+                "artifactLocation": {
+                  "uri": "Season-2/Level-3/code.js",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 27,
+                  "endLine": 38
+                }
               }
             }
           ],
-          "properties": { "severity": "Critical" }
+          "properties": {
+            "severity": "Critical",
+            "security-severity": "9.5"
+          }
         },
         {
           "ruleId": "CWE-78",
@@ -288,12 +590,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-2/Level-3/code.js", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 67, "endLine": 81 }
+                "artifactLocation": {
+                  "uri": "Season-2/Level-3/code.js",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 67,
+                  "endLine": 81
+                }
               }
             }
           ],
-          "properties": { "severity": "Critical" }
+          "properties": {
+            "severity": "Critical",
+            "security-severity": "9.5"
+          }
         },
         {
           "ruleId": "CWE-787",
@@ -304,12 +615,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-1/Level-2/code.h", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 83, "endLine": 86 }
+                "artifactLocation": {
+                  "uri": "Season-1/Level-2/code.h",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 83,
+                  "endLine": 86
+                }
               }
             }
           ],
-          "properties": { "severity": "Critical" }
+          "properties": {
+            "severity": "Critical",
+            "security-severity": "9.5"
+          }
         },
         {
           "ruleId": "CWE-829",
@@ -320,12 +640,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": ".github/workflows/jarvis-code.yml", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 31, "endLine": 34 }
+                "artifactLocation": {
+                  "uri": ".github/workflows/jarvis-code.yml",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 31,
+                  "endLine": 34
+                }
               }
             }
           ],
-          "properties": { "severity": "Critical" }
+          "properties": {
+            "severity": "Critical",
+            "security-severity": "9.5"
+          }
         },
         {
           "ruleId": "CWE-1004",
@@ -336,15 +665,22 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-3/Level-6/code.spec.js", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 8, "endLine": 34 }
+                "artifactLocation": {
+                  "uri": "Season-3/Level-6/code.spec.js",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 8,
+                  "endLine": 34
+                }
               }
             }
           ],
-          "properties": { "severity": "Critical" }
+          "properties": {
+            "severity": "Critical",
+            "security-severity": "9.5"
+          }
         },
-
-
         {
           "ruleId": "CWE-190",
           "level": "error",
@@ -354,12 +690,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-1/Level-1/code.py", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 20, "endLine": 26 }
+                "artifactLocation": {
+                  "uri": "Season-1/Level-1/code.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 20,
+                  "endLine": 26
+                }
               }
             }
           ],
-          "properties": { "severity": "High" }
+          "properties": {
+            "severity": "High",
+            "security-severity": "7.5"
+          }
         },
         {
           "ruleId": "CWE-22",
@@ -370,12 +715,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-1/Level-3/code.py", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 25, "endLine": 42 }
+                "artifactLocation": {
+                  "uri": "Season-1/Level-3/code.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 25,
+                  "endLine": 42
+                }
               }
             }
           ],
-          "properties": { "severity": "High" }
+          "properties": {
+            "severity": "High",
+            "security-severity": "7.5"
+          }
         },
         {
           "ruleId": "CWE-89",
@@ -386,12 +740,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-1/Level-4/code.py", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 81, "endLine": 114 }
+                "artifactLocation": {
+                  "uri": "Season-1/Level-4/code.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 81,
+                  "endLine": 114
+                }
               }
             }
           ],
-          "properties": { "severity": "High" }
+          "properties": {
+            "severity": "High",
+            "security-severity": "7.5"
+          }
         },
         {
           "ruleId": "CWE-89",
@@ -402,12 +765,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-1/Level-4/code.py", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 125, "endLine": 152 }
+                "artifactLocation": {
+                  "uri": "Season-1/Level-4/code.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 125,
+                  "endLine": 152
+                }
               }
             }
           ],
-          "properties": { "severity": "High" }
+          "properties": {
+            "severity": "High",
+            "security-severity": "7.5"
+          }
         },
         {
           "ruleId": "CWE-89",
@@ -418,12 +790,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-1/Level-4/code.py", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 155, "endLine": 184 }
+                "artifactLocation": {
+                  "uri": "Season-1/Level-4/code.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 155,
+                  "endLine": 184
+                }
               }
             }
           ],
-          "properties": { "severity": "High" }
+          "properties": {
+            "severity": "High",
+            "security-severity": "7.5"
+          }
         },
         {
           "ruleId": "CWE-338",
@@ -434,12 +815,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-1/Level-5/code.py", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 14, "endLine": 20 }
+                "artifactLocation": {
+                  "uri": "Season-1/Level-5/code.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 14,
+                  "endLine": 20
+                }
               }
             }
           ],
-          "properties": { "severity": "High" }
+          "properties": {
+            "severity": "High",
+            "security-severity": "7.5"
+          }
         },
         {
           "ruleId": "CWE-338",
@@ -450,12 +840,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-1/Level-5/code.py", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 23, "endLine": 25 }
+                "artifactLocation": {
+                  "uri": "Season-1/Level-5/code.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 23,
+                  "endLine": 25
+                }
               }
             }
           ],
-          "properties": { "severity": "High" }
+          "properties": {
+            "severity": "High",
+            "security-severity": "7.5"
+          }
         },
         {
           "ruleId": "CWE-327",
@@ -466,12 +865,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-1/Level-5/code.py", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 41, "endLine": 49 }
+                "artifactLocation": {
+                  "uri": "Season-1/Level-5/code.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 41,
+                  "endLine": 49
+                }
               }
             }
           ],
-          "properties": { "severity": "High" }
+          "properties": {
+            "severity": "High",
+            "security-severity": "7.5"
+          }
         },
         {
           "ruleId": "CWE-798",
@@ -482,12 +890,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-1/Level-5/code.py", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 52, "endLine": 54 }
+                "artifactLocation": {
+                  "uri": "Season-1/Level-5/code.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 52,
+                  "endLine": 54
+                }
               }
             }
           ],
-          "properties": { "severity": "High" }
+          "properties": {
+            "severity": "High",
+            "security-severity": "7.5"
+          }
         },
         {
           "ruleId": "CWE-798",
@@ -498,12 +915,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-2/Level-2/code.go", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 40, "endLine": 45 }
+                "artifactLocation": {
+                  "uri": "Season-2/Level-2/code.go",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 40,
+                  "endLine": 45
+                }
               }
             }
           ],
-          "properties": { "severity": "High" }
+          "properties": {
+            "severity": "High",
+            "security-severity": "7.5"
+          }
         },
         {
           "ruleId": "CWE-532",
@@ -514,12 +940,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-2/Level-2/code.go", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 72, "endLine": 77 }
+                "artifactLocation": {
+                  "uri": "Season-2/Level-2/code.go",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 72,
+                  "endLine": 77
+                }
               }
             }
           ],
-          "properties": { "severity": "High" }
+          "properties": {
+            "severity": "High",
+            "security-severity": "7.5"
+          }
         },
         {
           "ruleId": "CWE-611",
@@ -530,12 +965,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-2/Level-3/code.js", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 40, "endLine": 55 }
+                "artifactLocation": {
+                  "uri": "Season-2/Level-3/code.js",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 40,
+                  "endLine": 55
+                }
               }
             }
           ],
-          "properties": { "severity": "High" }
+          "properties": {
+            "severity": "High",
+            "security-severity": "7.5"
+          }
         },
         {
           "ruleId": "CWE-79",
@@ -546,12 +990,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-2/Level-4/code.py", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 35, "endLine": 49 }
+                "artifactLocation": {
+                  "uri": "Season-2/Level-4/code.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 35,
+                  "endLine": 49
+                }
               }
             }
           ],
-          "properties": { "severity": "High" }
+          "properties": {
+            "severity": "High",
+            "security-severity": "7.5"
+          }
         },
         {
           "ruleId": "CWE-1004",
@@ -562,12 +1015,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-3/Level-1/code.spec.js", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 8, "endLine": 19 }
+                "artifactLocation": {
+                  "uri": "Season-3/Level-1/code.spec.js",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 8,
+                  "endLine": 19
+                }
               }
             }
           ],
-          "properties": { "severity": "High" }
+          "properties": {
+            "severity": "High",
+            "security-severity": "7.5"
+          }
         },
         {
           "ruleId": "CWE-1004",
@@ -578,12 +1040,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-3/Level-2/code.spec.js", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 8, "endLine": 24 }
+                "artifactLocation": {
+                  "uri": "Season-3/Level-2/code.spec.js",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 8,
+                  "endLine": 24
+                }
               }
             }
           ],
-          "properties": { "severity": "High" }
+          "properties": {
+            "severity": "High",
+            "security-severity": "7.5"
+          }
         },
         {
           "ruleId": "CWE-1004",
@@ -594,12 +1065,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-3/Level-3/code.spec.js", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 8, "endLine": 32 }
+                "artifactLocation": {
+                  "uri": "Season-3/Level-3/code.spec.js",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 8,
+                  "endLine": 32
+                }
               }
             }
           ],
-          "properties": { "severity": "High" }
+          "properties": {
+            "severity": "High",
+            "security-severity": "7.5"
+          }
         },
         {
           "ruleId": "CWE-1004",
@@ -610,12 +1090,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-3/Level-4/code.spec.js", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 8, "endLine": 32 }
+                "artifactLocation": {
+                  "uri": "Season-3/Level-4/code.spec.js",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 8,
+                  "endLine": 32
+                }
               }
             }
           ],
-          "properties": { "severity": "High" }
+          "properties": {
+            "severity": "High",
+            "security-severity": "7.5"
+          }
         },
         {
           "ruleId": "CWE-1004",
@@ -626,12 +1115,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-3/Level-5/code.spec.js", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 8, "endLine": 51 }
+                "artifactLocation": {
+                  "uri": "Season-3/Level-5/code.spec.js",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 8,
+                  "endLine": 51
+                }
               }
             }
           ],
-          "properties": { "severity": "High" }
+          "properties": {
+            "severity": "High",
+            "security-severity": "7.5"
+          }
         },
         {
           "ruleId": "CWE-798",
@@ -642,12 +1140,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": ".github/workflows/jarvis-code.yml", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 34, "endLine": 34 }
+                "artifactLocation": {
+                  "uri": ".github/workflows/jarvis-code.yml",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 34,
+                  "endLine": 34
+                }
               }
             }
           ],
-          "properties": { "severity": "High" }
+          "properties": {
+            "severity": "High",
+            "security-severity": "7.5"
+          }
         },
         {
           "ruleId": "CWE-20",
@@ -658,12 +1165,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-2/Level-5/code.js", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 17, "endLine": 18 }
+                "artifactLocation": {
+                  "uri": "Season-2/Level-5/code.js",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 17,
+                  "endLine": 18
+                }
               }
             }
           ],
-          "properties": { "severity": "High" }
+          "properties": {
+            "severity": "High",
+            "security-severity": "7.5"
+          }
         },
         {
           "ruleId": "CWE-915",
@@ -674,12 +1190,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-2/Level-5/code.js", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 45, "endLine": 45 }
+                "artifactLocation": {
+                  "uri": "Season-2/Level-5/code.js",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 45,
+                  "endLine": 45
+                }
               }
             }
           ],
-          "properties": { "severity": "High" }
+          "properties": {
+            "severity": "High",
+            "security-severity": "7.5"
+          }
         },
         {
           "ruleId": "CWE-1321",
@@ -690,12 +1215,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-2/Level-5/code.js", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 25, "endLine": 25 }
+                "artifactLocation": {
+                  "uri": "Season-2/Level-5/code.js",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 25,
+                  "endLine": 25
+                }
               }
             }
           ],
-          "properties": { "severity": "High" }
+          "properties": {
+            "severity": "High",
+            "security-severity": "7.5"
+          }
         },
         {
           "ruleId": "CWE-362",
@@ -706,12 +1240,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-2/Level-2/code.go", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 21, "endLine": 24 }
+                "artifactLocation": {
+                  "uri": "Season-2/Level-2/code.go",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 21,
+                  "endLine": 24
+                }
               }
             }
           ],
-          "properties": { "severity": "High" }
+          "properties": {
+            "severity": "High",
+            "security-severity": "7.5"
+          }
         },
         {
           "ruleId": "CWE-79",
@@ -722,15 +1265,22 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-2/Level-4/templates/details.html", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 22, "endLine": 22 }
+                "artifactLocation": {
+                  "uri": "Season-2/Level-4/templates/details.html",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 22,
+                  "endLine": 22
+                }
               }
             }
           ],
-          "properties": { "severity": "High" }
+          "properties": {
+            "severity": "High",
+            "security-severity": "7.5"
+          }
         },
-
-
         {
           "ruleId": "CWE-656",
           "level": "warning",
@@ -740,12 +1290,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-1/Level-2/code.h", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 32, "endLine": 37 }
+                "artifactLocation": {
+                  "uri": "Season-1/Level-2/code.h",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 32,
+                  "endLine": 37
+                }
               }
             }
           ],
-          "properties": { "severity": "Medium" }
+          "properties": {
+            "severity": "Medium",
+            "security-severity": "5.0"
+          }
         },
         {
           "ruleId": "CWE-204",
@@ -756,12 +1315,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-2/Level-2/code.go", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 68, "endLine": 76 }
+                "artifactLocation": {
+                  "uri": "Season-2/Level-2/code.go",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 68,
+                  "endLine": 76
+                }
               }
             }
           ],
-          "properties": { "severity": "Medium" }
+          "properties": {
+            "severity": "Medium",
+            "security-severity": "5.0"
+          }
         },
         {
           "ruleId": "CWE-79",
@@ -772,12 +1340,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-2/Level-4/templates/details.html", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 26, "endLine": 28 }
+                "artifactLocation": {
+                  "uri": "Season-2/Level-4/templates/details.html",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 26,
+                  "endLine": 28
+                }
               }
             }
           ],
-          "properties": { "severity": "Medium" }
+          "properties": {
+            "severity": "Medium",
+            "security-severity": "5.0"
+          }
         },
         {
           "ruleId": "CWE-209",
@@ -788,12 +1365,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-2/Level-3/code.js", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 89, "endLine": 90 }
+                "artifactLocation": {
+                  "uri": "Season-2/Level-3/code.js",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 89,
+                  "endLine": 90
+                }
               }
             }
           ],
-          "properties": { "severity": "Medium" }
+          "properties": {
+            "severity": "Medium",
+            "security-severity": "5.0"
+          }
         },
         {
           "ruleId": "CWE-400",
@@ -804,12 +1390,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-2/Level-3/code.js", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 24, "endLine": 25 }
+                "artifactLocation": {
+                  "uri": "Season-2/Level-3/code.js",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 24,
+                  "endLine": 25
+                }
               }
             }
           ],
-          "properties": { "severity": "Medium" }
+          "properties": {
+            "severity": "Medium",
+            "security-severity": "5.0"
+          }
         },
         {
           "ruleId": "CWE-476",
@@ -820,15 +1415,22 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-1/Level-2/code.h", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 63, "endLine": 67 }
+                "artifactLocation": {
+                  "uri": "Season-1/Level-2/code.h",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 63,
+                  "endLine": 67
+                }
               }
             }
           ],
-          "properties": { "severity": "Medium" }
+          "properties": {
+            "severity": "Medium",
+            "security-severity": "5.0"
+          }
         },
-
-
         {
           "ruleId": "CWE-532",
           "level": "note",
@@ -838,12 +1440,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-2/Level-2/code.go", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 61, "endLine": 61 }
+                "artifactLocation": {
+                  "uri": "Season-2/Level-2/code.go",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 61,
+                  "endLine": 61
+                }
               }
             }
           ],
-          "properties": { "severity": "Low" }
+          "properties": {
+            "severity": "Low",
+            "security-severity": "2.0"
+          }
         },
         {
           "ruleId": "CWE-208",
@@ -854,12 +1465,21 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-2/Level-2/code.go", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 72, "endLine": 72 }
+                "artifactLocation": {
+                  "uri": "Season-2/Level-2/code.go",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 72,
+                  "endLine": 72
+                }
               }
             }
           ],
-          "properties": { "severity": "Low" }
+          "properties": {
+            "severity": "Low",
+            "security-severity": "2.0"
+          }
         },
         {
           "ruleId": "CWE-1333",
@@ -870,14 +1490,22 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "Season-3/.utils/utils.js", "uriBaseId": "%SRCROOT%" },
-                "region": { "startLine": 44, "endLine": 48 }
+                "artifactLocation": {
+                  "uri": "Season-3/.utils/utils.js",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 44,
+                  "endLine": 48
+                }
               }
             }
           ],
-          "properties": { "severity": "Low" }
+          "properties": {
+            "severity": "Low",
+            "security-severity": "2.0"
+          }
         }
-
       ]
     }
   ]
