@@ -35,3 +35,17 @@ jobs:
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v4
+
+  upload-claude-sarif:
+    name: Upload Claude SARIF
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+      - name: Upload Claude security scan results
+        uses: github/codeql-action/upload-sarif@v4
+        with:
+          sarif_file: claude-security-scan.sarif
