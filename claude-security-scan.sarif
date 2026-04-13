@@ -607,31 +607,6 @@
           }
         },
         {
-          "ruleId": "CWE-787",
-          "level": "error",
-          "message": {
-            "text": "Out-of-bounds write in update_setting(): the index 'i' parsed from user input is checked against SETTINGS_COUNT but never checked for i < 0. A negative index (e.g. \"-7\") computes an address before setting[0] in the struct, landing on the isAdmin field and allowing a non-admin user to escalate privileges."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "Season-1/Level-2/code.h",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 83,
-                  "endLine": 86
-                }
-              }
-            }
-          ],
-          "properties": {
-            "severity": "Critical",
-            "security-severity": "9.5"
-          }
-        },
-        {
           "ruleId": "CWE-829",
           "level": "error",
           "message": {
